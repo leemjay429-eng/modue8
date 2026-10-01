@@ -141,7 +141,7 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
   .contents_div .vcn-alert__br{display:inline}
   /* 제목이 줄바꿈되는 구간: 주사기를 섹션 오른쪽 큰 배경으로, 아래쪽은 카드 뒤로 숨김 */
   .contents_div .vcn-alert__quote em::after{display:none}
-  .contents_div .vcn-alert::after{content:'';position:absolute;z-index:0;top:max(6px,calc(218px - 41.65vw));right:calc(1% + 3px);width:28.83vw;aspect-ratio:875 / 1264;background:var(--vcn-syringe) no-repeat center / contain;pointer-events:none}
+  .contents_div .vcn-alert::after{content:'';position:absolute;z-index:0;top:max(2px,calc(214px - 39.57vw));right:calc(1% - 4px);width:27.39vw;transform:rotate(-3deg);aspect-ratio:875 / 1264;background:var(--vcn-syringe) no-repeat center / contain;pointer-events:none}
 }
 .contents_div .vcn-alert__quote em::after{content:'';position:absolute;z-index:-1;left:100%;bottom:calc(-.45em - 14px);margin-left:10px;width:min(75px,9.4vw);aspect-ratio:875 / 1264;background:var(--vcn-syringe) no-repeat center / contain;pointer-events:none}
 @media (min-width:521px) and (max-width:600px){.contents_div .vcn-alert__quote em::after{margin-left:3px;width:10.5vw;bottom:calc(-.45em - 30px)}}
@@ -362,6 +362,9 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
   .contents_div .vcn-pet__val{overflow-wrap:anywhere}
   .contents_div .vcn-where__step{grid-template-columns:minmax(0,1fr);gap:6px;padding:var(--vcn-card-y) var(--vcn-card-x)}
   .contents_div .vcn-where__no{font-size:19px;padding-top:2px}
+  .contents_div .vcn-where__hd{justify-content:center}
+  .contents_div .vcn-where__txt{text-align:center;padding-left:12px;padding-right:12px}
+  .contents_div .vcn-where__step:first-child .vcn-where__txt{padding-left:28px;padding-right:28px}
   .contents_div .vcn-combo{padding:var(--vcn-card-y) var(--vcn-card-x)}
   .contents_div .vcn-combo__badge{font-size:12px}
   .contents_div .vcn-combo__badge span{padding:6px 8px 4px}
@@ -593,9 +596,6 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
 </style>
 <div class="contents_div">
 <div class="vcn">
-  <!-- TEST: 히어로 진입 테스트용 빈 프레임 (테스트 후 삭제) -->
-<div class="jngj-test-spacer" style="height:1200px;background:#fffdef;" aria-hidden="true"></div>
-<!-- /TEST 뷰포트 진입 애니메이션 확인용, 확인 후 삭제 -->
 
   <!-- ===== 히어로 + 인트로 ===== -->
   <section class="vcn-hero">
