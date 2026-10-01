@@ -1,0 +1,916 @@
+<!-- 모바일 좌우 패딩 16 -->
+<script>
+if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
+  var s=document.createElement('style');
+  s.textContent='body{margin:0}@media(max-width:700px){.contents_div{padding:0 16px}}';
+  document.head.appendChild(s);
+}
+</script>
+<script>
+(function(){
+  try{
+    if(!document.querySelector('meta[name="viewport"]')){
+      var m=document.createElement('meta');
+      m.setAttribute('name','viewport');
+      m.setAttribute('content','width=device-width, initial-scale=1');
+      (document.head||document.getElementsByTagName('head')[0]||document.documentElement).appendChild(m);
+    }
+  }catch(e){}
+})();
+</script>
+<!-- ================================================================
+  모두의전남광주 상세페이지 | 올가을 가족 건강의 완성 — 예방접종 일정 체크
+  프리픽스: vcn-  /  CMS 임베드용 프래그먼트 (.contents_div 스코프)
+  · 인라인 <svg> 미사용 — 모든 그래픽은 CSS data URI
+================================================================= -->
+<style>
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');font-weight:100;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');font-weight:200;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');font-weight:300;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');font-weight:800;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');font-weight:900;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');font-weight:100;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');font-weight:200;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');font-weight:300;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');font-weight:800;font-display:swap}
+@font-face{font-family:'Paperozi';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');font-weight:900;font-display:swap}
+@font-face{font-family:'GmarketSansBold';src:url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
+
+.contents_div .vcn{
+  /* 히어로 이미지 추출 팔레트: 블루 기준색 + 핑크(바이러스)·옐로(뱃지) 포인트 */
+  --vcn-blue:#3556a4;--vcn-blue-mid:#4d78cb;--vcn-blue-deep:#2238b4;--vcn-blue-deeper:#1a2c8f;
+  --vcn-blue-soft:#e2e9fb;--vcn-blue-pale:#f0f3fc;--vcn-blue-line:#cbd6f3;
+  --vcn-navy:#1f3478;--vcn-navy-2:#2d4a94;--vcn-navy-3:#b8c6ec;
+  --vcn-pink:#e25496;--vcn-pink-deep:#c9387d;--vcn-pink-soft:#fde4f0;
+  --vcn-yellow:#fbbd0e;--vcn-yellow-soft:#fff3cc;--vcn-yellow-deep:#b98500;
+  --vcn-bg:#f1f4fc;--vcn-bg-2:#d3ddf6;--vcn-line:#d3dbf0;--vcn-yellow-line:#f7d77a;--vcn-pink-line:#f9cde1;--vcn-line-soft:#e6ebf8;
+  --vcn-ink:#1c2340;--vcn-gray:#56607a;--vcn-white:#ffffff;
+  --vcn-on-navy:#d5ddf3;--vcn-on-navy-2:#e2e8f7;--vcn-on-blue:#e6ecfb;
+  --vcn-glass:rgba(255,255,255,.14);--vcn-glass-line:rgba(255,255,255,.35);
+  --vcn-line-faint:rgba(255,255,255,.25);--vcn-line-navy:rgba(255,255,255,.14);--vcn-arrow-bg:rgba(255,255,255,.16);
+  --vcn-grad-card:linear-gradient(180deg,#ffffff 0%,#e9eefc 100%);
+  --vcn-grad-hot:linear-gradient(180deg,#d23577 0%,#f25a9a 100%);
+  --vcn-grad-edge:linear-gradient(180deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.2) 100%);
+  --vcn-grad-navy:linear-gradient(180deg,#1f3478 0%,#2d4a94 100%);
+  /* 타이포 토큰 (타이포그래피-기준 3번 표) */
+  /* 얼굴 3종 원본 이미지(861×274) 1장 */
+  --vcn-faces:url("img/대상자.webp");
+  /* 댕냥이 편 배경 원본 이미지(1585×940) — 경로 교체 시 이 한 줄만 수정 */
+  --vcn-petbg:url("img/배경.webp");
+  /* WHO 방패 원본 이미지(1132×1286) — 경로 교체 시 이 한 줄만 수정 */
+  --vcn-shield:url("img/방패.webp");
+  --vcn-obj-ball:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%22-8 -8 116 116%22%3E%3Cdefs%3E%3CradialGradient id=%22b%22 cx=%22.36%22 cy=%22.3%22 r=%22.78%22%3E%3Cstop offset=%220%22 stop-color=%22%23b9bcfa%22/%3E%3Cstop offset=%22.45%22 stop-color=%22%238387ea%22/%3E%3Cstop offset=%221%22 stop-color=%22%235a5ecb%22/%3E%3C/radialGradient%3E%3CradialGradient id=%22s%22 cx=%22.5%22 cy=%22.5%22 r=%22.5%22%3E%3Cstop offset=%220%22 stop-color=%22%23ffffff%22 stop-opacity=%22.85%22/%3E%3Cstop offset=%221%22 stop-color=%22%23ffffff%22 stop-opacity=%220%22/%3E%3C/radialGradient%3E%3Cfilter id=%22f%22 x=%22-20%%22 y=%22-20%%22 width=%22140%%22 height=%22140%%22%3E%3CfeGaussianBlur stdDeviation=%223.2%22/%3E%3C/filter%3E%3C/defs%3E%3Cg filter=%22url(%23f)%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22url(%23b)%22/%3E%3Cellipse cx=%2235%22 cy=%2228%22 rx=%2217%22 ry=%2211%22 fill=%22url(%23s)%22 transform=%22rotate(-28 35 28)%22/%3E%3C/g%3E%3C/svg%3E");
+  --vcn-obj-pill:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%22-8 -8 116 86%22%3E%3Cdefs%3E%3CradialGradient id=%22b%22 cx=%22.38%22 cy=%22.3%22 r=%22.8%22%3E%3Cstop offset=%220%22 stop-color=%22%23b9bcfa%22/%3E%3Cstop offset=%22.45%22 stop-color=%22%238387ea%22/%3E%3Cstop offset=%221%22 stop-color=%22%235a5ecb%22/%3E%3C/radialGradient%3E%3CradialGradient id=%22s%22 cx=%22.5%22 cy=%22.5%22 r=%22.5%22%3E%3Cstop offset=%220%22 stop-color=%22%23ffffff%22 stop-opacity=%22.8%22/%3E%3Cstop offset=%221%22 stop-color=%22%23ffffff%22 stop-opacity=%220%22/%3E%3C/radialGradient%3E%3Cfilter id=%22f%22 x=%22-20%%22 y=%22-20%%22 width=%22140%%22 height=%22140%%22%3E%3CfeGaussianBlur stdDeviation=%224%22/%3E%3C/filter%3E%3C/defs%3E%3Cg filter=%22url(%23f)%22 opacity=%22.6%22%3E%3Cellipse cx=%2250%22 cy=%2235%22 rx=%2248%22 ry=%2233%22 fill=%22url(%23b)%22/%3E%3Cellipse cx=%2236%22 cy=%2219%22 rx=%2220%22 ry=%229%22 fill=%22url(%23s)%22 transform=%22rotate(-14 36 19)%22/%3E%3C/g%3E%3C/svg%3E");
+  /* h2 아이콘 원본 이미지(1494×724) — 달력·병원을 CSS로 잘라 표시 */
+  --vcn-h2ico:url("img/h2아이콘.webp");
+  /* 백신 주사기 원본 이미지(875×1264) */
+  --vcn-syringe:url("img/백신.webp");
+  --vcn-fs-h2:28px;--vcn-fs-foot:25px;--vcn-fs-h3:21px;
+  --vcn-fs-body:17px;--vcn-fs-lead:16px;--vcn-fs-info:16px;--vcn-fs-sub:15px;
+  --vcn-fs-cta:16px;--vcn-fs-kicker:15px;--vcn-fs-num:14px;
+  --vcn-fs-tag:12.5px;--vcn-fs-qa:18px;
+  --vcn-lh-h2:1.35;--vcn-lh-h3:1.45;--vcn-lh-body:1.56;
+  --vcn-kick:32px;--vcn-card-y:30px;--vcn-card-x:28px;
+  --vcn-ff-title:'Paperozi','Pretendard',sans-serif;
+  --vcn-ff-disp:'GmarketSansBold','Pretendard',sans-serif;
+  max-width:800px;margin:0 auto;background:var(--vcn-bg);color:var(--vcn-ink);
+  font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  font-size:var(--vcn-fs-body);line-height:1.56;letter-spacing:-0.02em;word-break:keep-all;overflow:hidden;
+}
+.contents_div .vcn,.contents_div .vcn *,.contents_div .vcn *::before,.contents_div .vcn *::after{box-sizing:border-box}
+.contents_div .vcn :where(h1,h2,h3,p,ul,ol,li,figure){margin:0;padding:0}
+.contents_div .vcn :where(ul,ol){list-style:none}
+.contents_div .vcn :where(img){max-width:100%;display:block;border:0}
+.contents_div .vcn :where(h1,h2,h3){font-family:var(--vcn-ff-title);word-break:keep-all}
+.contents_div .vcn :where(a){text-decoration:none;color:inherit}
+.contents_div .vcn :where(strong){font-weight:800}
+.contents_div .vcn :where(em){font-style:normal}
+.contents_div h1.vcn-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* 공통 */
+.contents_div .vcn__sec{width:100%;padding:70px clamp(22px,6.25%,50px)}
+.contents_div .vcn__head{display:flex;flex-direction:column;align-items:center;gap:14px;padding-bottom:32px;text-align:center}
+.contents_div .vcn__eyebrow{display:inline-flex;align-items:center;justify-content:center;height:var(--vcn-kick);padding:2px 16px 0;border-radius:999px;background:var(--vcn-pink);color:var(--vcn-white);font-family:var(--vcn-ff-disp);font-weight:400;font-size:var(--vcn-fs-kicker);line-height:1;letter-spacing:0.01em;white-space:nowrap}
+.contents_div .vcn__h2{font-weight:800;font-size:var(--vcn-fs-h2);line-height:var(--vcn-lh-h2);letter-spacing:-0.01em;color:var(--vcn-ink)}
+.contents_div .vcn__h2 em{color:var(--vcn-blue-deep)}
+.contents_div .vcn__h2 .vcn__line{display:block}
+.contents_div .vcn__h3{font-weight:700;font-size:var(--vcn-fs-h3);line-height:var(--vcn-lh-h3);color:var(--vcn-navy)}
+.contents_div .vcn__lead{font-size:var(--vcn-fs-lead);line-height:1.56;color:var(--vcn-gray)}
+.contents_div .vcn__lead strong{color:var(--vcn-ink)}
+.contents_div .vcn__note{position:relative;padding:14px 0 0 18px;font-size:var(--vcn-fs-sub);color:var(--vcn-gray)}
+.contents_div .vcn__note::before{content:'※';position:absolute;left:0;top:14px}
+.contents_div .vcn-nw{white-space:nowrap}
+.contents_div .vcn-h2ico{display:inline-block;box-sizing:content-box;height:1.25em;padding:0 .18em;vertical-align:-0.26em;background-image:var(--vcn-h2ico);background-repeat:no-repeat;background-origin:content-box;background-clip:content-box}
+.contents_div .vcn-h2ico--cal{width:1.323em;background-size:293.52% 150.52%;background-position:9.44% 58.85%}
+.contents_div .vcn-h2ico--hosp{width:1.719em;background-size:230.20% 153.39%;background-position:89.35% 59.52%}
+.contents_div .vcn-br-mo{display:none}
+.contents_div .vcn-ph{display:inline-block;text-wrap:balance}
+.contents_div .vcn__stack{display:flex;flex-direction:column;gap:14px}
+
+/* 스크롤 진입 애니메이션: JS가 .is-ready를 붙였을 때만 숨김 → JS가 막혀도 내용 노출 */
+.contents_div .vcn.is-ready [data-vcn-reveal]{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.contents_div .vcn.is-ready [data-vcn-reveal].is-in{opacity:1;transform:none}
+.contents_div .vcn [data-vcn-delay="1"]{transition-delay:.12s}
+.contents_div .vcn [data-vcn-delay="2"]{transition-delay:.24s}
+.contents_div .vcn [data-vcn-delay="3"]{transition-delay:.36s}
+
+/* 히어로 (이미지) + 인트로 */
+.contents_div .vcn-hero{background:var(--vcn-blue)}
+.contents_div .vcn-intro{width:100%;padding:0 clamp(22px,6.25%,50px);background:var(--vcn-bg)}
+.contents_div .vcn-intro__card{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:20px;width:100%;margin-top:-9%;padding:36px 32px;background:var(--vcn-navy);background-image:var(--vcn-grad-navy),var(--vcn-grad-edge);background-origin:border-box;background-clip:padding-box,border-box;border:1px solid transparent;color:var(--vcn-white);border-radius:24px;text-align:center}
+.contents_div .vcn-intro__desc{font-size:var(--vcn-fs-body);line-height:var(--vcn-lh-body);color:var(--vcn-on-navy-2)}
+.contents_div .vcn-intro__desc strong{color:var(--vcn-yellow)}
+.contents_div .vcn-intro__ps{display:inline-block;background:var(--vcn-glass);border:1.5px solid var(--vcn-glass-line);border-radius:16px;padding:12px 20px;font-size:var(--vcn-fs-info);line-height:1.56;color:var(--vcn-white)}
+.contents_div .vcn-intro__ps b{font-family:var(--vcn-ff-disp);font-weight:400;color:var(--vcn-yellow);padding-right:6px}
+
+/* 유행주의보 */
+.contents_div .vcn-alert{background:var(--vcn-bg);position:relative}
+.contents_div .vcn-alert > *{position:relative;z-index:1}
+/* 주사기를 제목 끝(빨라졌어요)에 고정 → 폭이 줄어도 글자와 간격 유지 */
+.contents_div .vcn-alert__quote em{position:relative}
+.contents_div .vcn-alert__br{display:none}
+@media (max-width:520px){
+  .contents_div .vcn-alert__br{display:inline}
+  /* 제목이 줄바꿈되는 구간: 주사기를 섹션 오른쪽 큰 배경으로, 아래쪽은 카드 뒤로 숨김 */
+  .contents_div .vcn-alert__quote em::after{display:none}
+  .contents_div .vcn-alert::after{content:'';position:absolute;z-index:0;top:max(6px,calc(218px - 41.65vw));right:calc(1% + 3px);width:28.83vw;aspect-ratio:875 / 1264;background:var(--vcn-syringe) no-repeat center / contain;pointer-events:none}
+}
+.contents_div .vcn-alert__quote em::after{content:'';position:absolute;z-index:-1;left:100%;bottom:calc(-.45em - 14px);margin-left:10px;width:min(75px,9.4vw);aspect-ratio:875 / 1264;background:var(--vcn-syringe) no-repeat center / contain;pointer-events:none}
+@media (min-width:521px) and (max-width:600px){.contents_div .vcn-alert__quote em::after{margin-left:3px;width:10.5vw;bottom:calc(-.45em - 30px)}}
+.contents_div .vcn-alert__quote{color:var(--vcn-navy)}
+.contents_div .vcn-alert__quote em{color:var(--vcn-pink)}
+.contents_div .vcn-alert__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.contents_div .vcn-alert__card{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;border:1.5px solid var(--vcn-line);border-radius:20px;padding:var(--vcn-card-y) 22px;background:var(--vcn-white);background-image:var(--vcn-grad-card)}
+.contents_div .vcn-alert__card--hot{background:var(--vcn-pink-deep);background-image:var(--vcn-grad-hot);border-color:var(--vcn-pink-deep);color:var(--vcn-white)}
+.contents_div .vcn-alert__card--navy{background:var(--vcn-navy);background-image:var(--vcn-grad-navy);border-color:var(--vcn-navy);color:var(--vcn-white)}
+.contents_div .vcn-alert__label{font-size:var(--vcn-fs-sub);font-weight:700;line-height:1.4;opacity:.85}
+.contents_div .vcn-alert__big{font-family:var(--vcn-ff-disp);font-weight:400;font-size:40px;line-height:1.1;letter-spacing:-0.04em;color:var(--vcn-navy);align-self:stretch;padding-top:3px;padding-bottom:10px;border-bottom:1px solid var(--vcn-line-soft)}
+.contents_div .vcn-alert__card--hot .vcn-alert__big{color:var(--vcn-white);border-bottom-color:var(--vcn-line-faint)}
+.contents_div .vcn-alert__card--navy .vcn-alert__big{color:var(--vcn-yellow);border-bottom-color:var(--vcn-line-faint)}
+.contents_div .vcn-alert__text{padding-top:4px;font-size:var(--vcn-fs-info);line-height:1.56}
+
+/* 접종 대상 */
+.contents_div .vcn-target{background:var(--vcn-bg-2);position:relative;overflow:hidden}
+.contents_div .vcn-target::before{content:'';position:absolute;z-index:0;top:64px;right:-7.94%;width:39.7%;opacity:.3;aspect-ratio:1132 / 1286;background:var(--vcn-shield) no-repeat center / contain;pointer-events:none}
+.contents_div .vcn-target::after{content:'';position:absolute;z-index:0;inset:0;pointer-events:none;opacity:.3;background-image:var(--vcn-obj-ball),var(--vcn-obj-pill);background-repeat:no-repeat;background-position:left -4.9% top 51px,left -28.8% bottom 10px;background-size:9.85% auto,30% auto}
+.contents_div .vcn-target > *{position:relative;z-index:1}
+.contents_div .vcn-target__list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.contents_div .vcn-target__item{display:flex;flex-direction:column;align-items:center;gap:8px;background:var(--vcn-white);background-image:var(--vcn-grad-card);border:1.5px solid var(--vcn-line);border-radius:22px;padding:var(--vcn-card-y) 18px;text-align:center}
+.contents_div .vcn-target__icon{width:96px;height:96px;border-radius:50%;overflow:hidden;background-image:var(--vcn-faces);background-repeat:no-repeat;background-size:296.90% 94.48%}
+.contents_div .vcn-target__icon--kid{background-color:var(--vcn-yellow-soft);background-position:-0.70% 50.00%}
+.contents_div .vcn-target__icon--preg{background-color:var(--vcn-pink-soft);background-position:50.18% 53.12%}
+.contents_div .vcn-target__icon--elder{background-color:var(--vcn-blue-soft);background-position:101.66% 46.88%}
+.contents_div .vcn-target__txt{display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:6px}
+.contents_div .vcn-target__name{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:2px 18px;border-radius:10px;font-size:18px;line-height:1.2;white-space:nowrap}
+.contents_div .vcn-target__name--kid{background:var(--vcn-yellow);color:var(--vcn-navy)}
+.contents_div .vcn-target__name--preg{background:#f8bfd9;color:#a82767}
+.contents_div .vcn-target__name--elder{background:var(--vcn-navy);color:var(--vcn-white)}
+.contents_div .vcn-target__cond{font-size:var(--vcn-fs-sub);line-height:1.56;color:var(--vcn-gray)}
+
+/* 접종 일정 */
+.contents_div .vcn-sched{background:var(--vcn-bg)}
+.contents_div .vcn-sched__grid{display:flex;flex-direction:column;gap:10px}
+.contents_div .vcn-sched__group{display:flex;flex-wrap:wrap;align-items:stretch;gap:10px;border:1.5px solid transparent;border-radius:22px;padding:10px 14px}
+.contents_div .vcn-sched__group--kid{background:var(--vcn-yellow-soft);border-color:var(--vcn-yellow-line)}
+.contents_div .vcn-sched__group--preg{background:var(--vcn-pink-soft);border-color:var(--vcn-pink-line)}
+.contents_div .vcn-sched__group--elder{background:var(--vcn-blue-soft);border-color:var(--vcn-blue-line)}
+.contents_div .vcn-sched__gtit{flex:0 0 150px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;border-radius:14px;padding:11px 10px;text-align:center;color:var(--vcn-white)}
+.contents_div .vcn-sched__group--kid .vcn-sched__gtit{background:var(--vcn-yellow);color:var(--vcn-navy)}
+.contents_div .vcn-sched__group--preg .vcn-sched__gtit{background:var(--vcn-pink-deep);background-image:var(--vcn-grad-hot)}
+.contents_div .vcn-sched__group--elder .vcn-sched__gtit{background:var(--vcn-navy);background-image:var(--vcn-grad-navy)}
+.contents_div .vcn-sched__ico{flex:0 0 auto;width:58px;height:58px;background-color:var(--vcn-white)}
+.contents_div .vcn-sched__row{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;flex:1 1 0;min-width:0;background:var(--vcn-white);border-radius:14px;padding:11px 12px;text-align:center}
+.contents_div .vcn-sched__who{font-weight:700;font-size:var(--vcn-fs-info);line-height:1.35;color:var(--vcn-gray)}
+.contents_div .vcn-sched__date{font-family:var(--vcn-ff-disp);font-weight:400;font-size:26px;line-height:1.2;letter-spacing:-0.03em;color:var(--vcn-yellow-deep)}
+.contents_div .vcn-sched__date small{font-family:'Pretendard',sans-serif;font-weight:700;font-size:14px;letter-spacing:-0.02em;padding-left:3px}
+.contents_div .vcn-sched__group--preg .vcn-sched__date{color:var(--vcn-pink)}
+.contents_div .vcn-sched__group--elder .vcn-sched__date{color:var(--vcn-blue-deep)}
+.contents_div .vcn-point{flex:0 0 100%;padding:3px 8px 2px;font-size:var(--vcn-fs-sub);font-weight:500;line-height:1.56;color:var(--vcn-gray);text-align:center}
+
+/* 접종 장소 — 넘버링은 타이틀과 같은 행 */
+.contents_div .vcn-where{background:var(--vcn-bg-2)}
+.contents_div .vcn-where__steps{display:flex;flex-direction:column;gap:10px}
+.contents_div .vcn-where__step{display:grid;grid-template-columns:250px minmax(0,1fr);align-items:center;gap:20px;background:var(--vcn-white);background-image:var(--vcn-grad-card);border:1.5px solid var(--vcn-line);border-radius:22px;padding:22px var(--vcn-card-x)}
+.contents_div .vcn-where__hd{display:flex;align-items:center;gap:10px}
+.contents_div .vcn-where__no{flex:0 0 auto;font-family:var(--vcn-ff-disp);font-weight:400;font-size:24px;line-height:1;color:var(--vcn-yellow);padding-top:3px}
+.contents_div .vcn-where__txt{font-size:var(--vcn-fs-info);line-height:1.56;color:var(--vcn-gray)}
+.contents_div .vcn-combo{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;background:var(--vcn-navy);color:var(--vcn-white);border-radius:22px;padding:22px 24px}
+.contents_div .vcn-combo__badge{flex:0 0 auto;display:flex;align-items:center;gap:6px;font-family:var(--vcn-ff-disp);font-weight:400;font-size:14px;line-height:1.2}
+.contents_div .vcn-combo__badge span{border-radius:10px;padding:8px 10px 5px}
+.contents_div .vcn-combo__badge .vcn-combo__flu{background:var(--vcn-pink)}
+.contents_div .vcn-combo__badge .vcn-combo__cov{background:var(--vcn-blue-deep)}
+.contents_div .vcn-combo__badge i{font-style:normal;color:var(--vcn-yellow);font-size:20px}
+.contents_div .vcn-combo__txt{font-size:var(--vcn-fs-info);line-height:1.56;color:var(--vcn-on-navy-2)}
+
+/* CTA 버튼 */
+.contents_div .vcn__btns{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding-top:14px}
+.contents_div .vcn__btns--one{grid-template-columns:1fr}
+.contents_div .vcn .vcn__btn{display:flex;align-items:center;justify-content:center;gap:12px;min-height:48px;border-radius:18px;padding:18px 22px;font-weight:700;font-size:var(--vcn-fs-cta);line-height:1.45;text-align:center;border:2px solid var(--vcn-navy);transition:background-color .2s ease}
+.contents_div .vcn .vcn__btn::after{content:'';flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:var(--vcn-arrow-bg) url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Cpath d=%22M3 8h9M8 3.5 12.5 8 8 12.5%22 fill=%22none%22 stroke=%22%23ffffff%22 stroke-width=%222.2%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E") no-repeat center / 16px 16px;transition:transform .2s ease}
+.contents_div .vcn .vcn__btn--fill{background:var(--vcn-navy);color:var(--vcn-white)}
+.contents_div .vcn .vcn__btn--line{background:var(--vcn-white);color:var(--vcn-navy)}
+.contents_div .vcn .vcn__btn--line::after{background:var(--vcn-yellow-soft) url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Cpath d=%22M3 8h9M8 3.5 12.5 8 8 12.5%22 fill=%22none%22 stroke=%22%231f3478%22 stroke-width=%222.2%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E") no-repeat center / 16px 16px}
+.contents_div .vcn .vcn__btn--teal{background:var(--vcn-blue-deep);border-color:var(--vcn-blue-deep);color:var(--vcn-white)}
+.contents_div .vcn .vcn__btn:focus-visible{outline:3px solid var(--vcn-yellow);outline-offset:3px}
+.contents_div .vcn .vcn__btn--fill:active{background:var(--vcn-navy-2)}
+.contents_div .vcn .vcn__btn--line:active{background:var(--vcn-yellow-soft)}
+.contents_div .vcn .vcn__btn--teal:active{background:var(--vcn-blue-deeper)}
+
+/* 반려동물 구분 배너 */
+.contents_div .vcn-divider{display:flex;flex-direction:column;align-items:center;gap:16px;aspect-ratio:1585 / 940;padding-bottom:0;background:#3b69d7 var(--vcn-petbg) no-repeat center bottom / 100% auto;color:var(--vcn-white);text-align:center}
+.contents_div .vcn-divider .vcn__eyebrow{background:var(--vcn-white);color:var(--vcn-blue-deep)}
+.contents_div .vcn-divider__title{font-weight:800;font-size:var(--vcn-fs-h2);line-height:var(--vcn-lh-h2);letter-spacing:-0.01em;color:var(--vcn-white)}
+.contents_div .vcn-divider__title span{display:block}
+.contents_div .vcn-divider__title em{display:block;font-family:var(--vcn-ff-disp);font-weight:400;font-size:48px;line-height:1.25;letter-spacing:-0.04em;color:var(--vcn-yellow)}
+.contents_div .vcn-divider__br{display:none}
+.contents_div .vcn-divider__desc{max-width:350px;font-size:var(--vcn-fs-body);line-height:var(--vcn-lh-body);color:var(--vcn-white)}
+
+/* 광견병 사업 */
+.contents_div .vcn-pet{background:var(--vcn-bg)}
+.contents_div .vcn-pet .vcn__eyebrow,.contents_div .vcn-rabies .vcn__eyebrow{background:var(--vcn-blue-deep)}
+.contents_div .vcn-pet__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.contents_div .vcn-pet__cell{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;border:1.5px solid var(--vcn-blue-line);border-radius:20px;padding:22px 22px 20px;background:var(--vcn-white);background-image:var(--vcn-grad-card)}
+.contents_div .vcn-pet__cell--price{background:var(--vcn-yellow);border-color:#e6a700}
+.contents_div .vcn-pet__label{display:flex;align-items:center;gap:8px;font-size:var(--vcn-fs-sub);font-weight:800;line-height:1.3;color:var(--vcn-blue-deep)}
+.contents_div .vcn-pet__cell--price .vcn-pet__label{color:var(--vcn-navy)}
+.contents_div .vcn-pet__label::before{content:'';flex:0 0 auto;width:18px;height:18px;background:no-repeat center / contain}
+.contents_div .vcn-pet__label--cal::before{background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 18 18%22%3E%3Crect x=%222%22 y=%223%22 width=%2214%22 height=%2213%22 rx=%223%22 fill=%22none%22 stroke=%22%232238b4%22 stroke-width=%222%22/%3E%3Cpath d=%22M2 7h14M6 1v4M12 1v4%22 stroke=%22%232238b4%22 stroke-width=%222%22 stroke-linecap=%22round%22/%3E%3C/svg%3E")}
+.contents_div .vcn-pet__label--paw::before{background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 18 18%22%3E%3Ccircle cx=%225%22 cy=%226%22 r=%222%22 fill=%22%232238b4%22/%3E%3Ccircle cx=%229%22 cy=%223.5%22 r=%222%22 fill=%22%232238b4%22/%3E%3Ccircle cx=%2213%22 cy=%226%22 r=%222%22 fill=%22%232238b4%22/%3E%3Cellipse cx=%229%22 cy=%2212%22 rx=%224.5%22 ry=%224%22 fill=%22%232238b4%22/%3E%3C/svg%3E")}
+.contents_div .vcn-pet__label--card::before{background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 18 18%22%3E%3Crect x=%221.5%22 y=%224%22 width=%2215%22 height=%2210%22 rx=%222.5%22 fill=%22none%22 stroke=%22%232238b4%22 stroke-width=%222%22/%3E%3Ccircle cx=%226%22 cy=%229%22 r=%222%22 fill=%22%232238b4%22/%3E%3Cpath d=%22M10 8h4M10 11h3%22 stroke=%22%232238b4%22 stroke-width=%221.6%22 stroke-linecap=%22round%22/%3E%3C/svg%3E")}
+.contents_div .vcn-pet__label--won::before{background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 18 18%22%3E%3Ccircle cx=%229%22 cy=%229%22 r=%227.5%22 fill=%22none%22 stroke=%22%231f3478%22 stroke-width=%222%22/%3E%3Cpath d=%22M5.5 6.5l1.5 5 2-4 2 4 1.5-5M5 9h8%22 fill=%22none%22 stroke=%22%231f3478%22 stroke-width=%221.5%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E")}
+.contents_div .vcn-pet__val{font-family:var(--vcn-ff-title);font-weight:700;font-size:var(--vcn-fs-h3);line-height:1.4;color:var(--vcn-navy)}
+.contents_div .vcn-pet__sub{font-size:var(--vcn-fs-sub);color:var(--vcn-gray);line-height:1.56}
+.contents_div .vcn-pet__cell--price .vcn-pet__sub{color:var(--vcn-navy)}
+.contents_div .vcn-pet__price{font-family:var(--vcn-ff-disp);font-weight:400;font-size:44px;line-height:1;color:var(--vcn-navy);letter-spacing:-0.04em;padding-top:6px}
+.contents_div .vcn-pet__price span{font-size:22px;padding-left:2px}
+
+/* 광견병 Q&A */
+.contents_div .vcn-rabies{background:var(--vcn-bg-2) url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Cg fill=%22%23c5d1f3%22%3E%3Cg transform=%22translate(52 54) rotate(-20) scale(0.095) translate(-220 -200)%22%3E%3Cpath transform=%22translate(220 280) scale(.78) translate(-220 -300)%22 d=%22M220 138C280 138 330 190 375 250C405 290 432 330 428 375C425 420 395 440 355 436C310 431 270 414 220 414C170 414 130 431 85 436C45 440 15 420 12 375C8 330 35 290 65 250C110 190 160 138 220 138Z%22/%3E%3Cellipse cx=%22150%22 cy=%2252%22 rx=%2255%22 ry=%2251%22 transform=%22rotate(-8 150 52)%22/%3E%3Cellipse cx=%22283%22 cy=%2252%22 rx=%2255%22 ry=%2251%22 transform=%22rotate(8 283 52)%22/%3E%3Cellipse cx=%2251%22 cy=%22152%22 rx=%2249%22 ry=%2257%22 transform=%22rotate(-12 51 152)%22/%3E%3Cellipse cx=%22384%22 cy=%22152%22 rx=%2249%22 ry=%2257%22 transform=%22rotate(12 384 152)%22/%3E%3C/g%3E%3Cg transform=%22translate(150 146) rotate(22) scale(0.072) translate(-220 -200)%22%3E%3Cpath transform=%22translate(220 280) scale(.78) translate(-220 -300)%22 d=%22M220 138C280 138 330 190 375 250C405 290 432 330 428 375C425 420 395 440 355 436C310 431 270 414 220 414C170 414 130 431 85 436C45 440 15 420 12 375C8 330 35 290 65 250C110 190 160 138 220 138Z%22/%3E%3Cellipse cx=%22150%22 cy=%2252%22 rx=%2255%22 ry=%2251%22 transform=%22rotate(-8 150 52)%22/%3E%3Cellipse cx=%22283%22 cy=%2252%22 rx=%2255%22 ry=%2251%22 transform=%22rotate(8 283 52)%22/%3E%3Cellipse cx=%2251%22 cy=%22152%22 rx=%2249%22 ry=%2257%22 transform=%22rotate(-12 51 152)%22/%3E%3Cellipse cx=%22384%22 cy=%22152%22 rx=%2249%22 ry=%2257%22 transform=%22rotate(12 384 152)%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat center top / 200px 200px}
+.contents_div .vcn-rabies__cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.contents_div .vcn-qa{display:flex;flex-direction:column;gap:12px}
+.contents_div .vcn-qa__item{background:var(--vcn-white);background-image:var(--vcn-grad-card);border:1.5px solid var(--vcn-blue-line);border-radius:20px;overflow:hidden}
+.contents_div .vcn-qa__q{display:flex;align-items:center;gap:12px;min-height:48px;padding:18px 20px;cursor:pointer;list-style:none;font-family:var(--vcn-ff-title);font-weight:700;font-size:var(--vcn-fs-qa);color:var(--vcn-navy);line-height:1.4}
+.contents_div .vcn-qa__q::-webkit-details-marker{display:none}
+.contents_div .vcn-qa__q::marker{content:''}
+.contents_div .vcn-qa__mark{flex:0 0 auto;width:var(--vcn-kick);height:var(--vcn-kick);border-radius:50%;background:var(--vcn-blue-deep);color:var(--vcn-white);display:flex;align-items:center;justify-content:center;font-family:var(--vcn-ff-disp);font-weight:400;font-size:var(--vcn-fs-num);line-height:1;padding-top:2px}
+.contents_div .vcn-qa__qt{flex:1 1 auto}
+.contents_div .vcn-qa__plus{flex:0 0 auto;width:24px;height:24px;position:relative}
+.contents_div .vcn-qa__plus::before,.contents_div .vcn-qa__plus::after{content:'';position:absolute;left:50%;top:50%;background:var(--vcn-blue-deep);border-radius:2px;transform:translate(-50%,-50%)}
+.contents_div .vcn-qa__plus::before{width:15px;height:3px}
+.contents_div .vcn-qa__plus::after{width:3px;height:15px;transition:transform .25s ease}
+.contents_div .vcn-qa__item[open] .vcn-qa__plus::after{transform:translate(-50%,-50%) rotate(90deg)}
+.contents_div .vcn-qa__a{display:flex;flex-direction:column;gap:10px;padding:0 20px 22px;font-size:var(--vcn-fs-info);line-height:1.56}
+.contents_div .vcn-bite{background:var(--vcn-navy);color:var(--vcn-white);border-radius:24px;padding:var(--vcn-card-y) 24px}
+.contents_div .vcn-bite__head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding-bottom:14px}
+.contents_div .vcn-bite__head::before{content:'';flex:0 0 auto;width:32px;height:32px;background:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 34 34%22%3E%3Cpath d=%22M17 6 28.5 27.5H5.5z%22 fill=%22%23fbbd0e%22 stroke=%22%23fbbd0e%22 stroke-width=%226%22 stroke-linejoin=%22round%22/%3E%3Cpath d=%22M17 12v8%22 stroke=%22%231f3478%22 stroke-width=%223.2%22 stroke-linecap=%22round%22/%3E%3Ccircle cx=%2217%22 cy=%2225%22 r=%222%22 fill=%22%231f3478%22/%3E%3C/svg%3E") no-repeat center / contain}
+.contents_div .vcn-bite__title{color:var(--vcn-white)}
+.contents_div .vcn-bite__list{counter-reset:vcnbite}
+.contents_div .vcn-bite__list li{counter-increment:vcnbite;position:relative;padding:12px 0 12px 44px;border-top:1px solid var(--vcn-line-navy);font-size:var(--vcn-fs-info);line-height:1.56;color:var(--vcn-on-navy-2)}
+.contents_div .vcn-bite__list li:first-child{border-top:0}
+.contents_div .vcn-bite__list li::before{content:counter(vcnbite);position:absolute;left:0;top:9px;width:var(--vcn-kick);height:var(--vcn-kick);border-radius:50%;background:var(--vcn-pink);color:var(--vcn-white);font-family:var(--vcn-ff-disp);font-size:var(--vcn-fs-num);line-height:1;display:flex;align-items:center;justify-content:center;padding-top:2px}
+.contents_div .vcn-bite__list li strong{color:var(--vcn-white)}
+
+/* 마무리(푸터) */
+.contents_div .vcn-outro{display:flex;flex-direction:column;align-items:center;gap:10px;background:var(--vcn-navy);color:var(--vcn-white);text-align:center;padding-top:44px;padding-bottom:40px}
+.contents_div .vcn-outro__shield{width:56px;height:56px;margin-bottom:3px;background:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 72 72%22%3E%3Cpath d=%22M36 4l28 10v20c0 18-12 29-28 35C20 63 8 52 8 34V14z%22 fill=%22%23fbbd0e%22/%3E%3Cpath d=%22M24 36l8 8 16-17%22 fill=%22none%22 stroke=%22%231f3478%22 stroke-width=%225%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E") no-repeat center / contain}
+.contents_div .vcn-outro__txt{max-width:520px;font-size:var(--vcn-fs-body);line-height:var(--vcn-lh-body);color:var(--vcn-on-navy)}
+.contents_div .vcn-outro__txt:not(.vcn-outro__txt--lg){max-width:none;white-space:nowrap}
+.contents_div .vcn-outro__pair{display:block;padding-bottom:28px}
+.contents_div .vcn-outro__big,.contents_div .vcn-outro__txt--lg{display:inline}
+.contents_div .vcn-outro__txt--lg br{display:inline}
+.contents_div .vcn-outro__txt--lg{max-width:none;font-family:var(--vcn-ff-title);font-weight:800;letter-spacing:-0.01em;font-size:var(--vcn-fs-foot);line-height:1.35}
+.contents_div .vcn-outro__big{font-family:var(--vcn-ff-title);font-weight:800;font-size:var(--vcn-fs-foot);line-height:1.35;letter-spacing:-0.01em;color:var(--vcn-white)}
+.contents_div .vcn-outro__big em{color:var(--vcn-yellow)}
+.contents_div .vcn-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;width:100%;border-top:1px solid var(--vcn-line-navy);padding-top:22px}
+.contents_div .vcn-tags li{font-size:var(--vcn-fs-tag);line-height:1.35;color:var(--vcn-navy-3);background:var(--vcn-navy-2);border-radius:999px;padding:5px 12px}
+
+@media (hover:hover) and (pointer:fine){
+  .contents_div .vcn .vcn__btn:hover::after{transform:translateX(4px)}
+  .contents_div .vcn .vcn__btn--fill:hover{background:var(--vcn-navy-2)}
+  .contents_div .vcn .vcn__btn--line:hover{background:var(--vcn-yellow-soft)}
+  .contents_div .vcn .vcn__btn--teal:hover{background:var(--vcn-blue-deeper)}
+  .contents_div .vcn-qa__q:hover{background:var(--vcn-blue-pale)}
+}
+@media (prefers-reduced-motion:reduce){
+  .contents_div .vcn.is-ready [data-vcn-reveal]{opacity:1;transform:none;transition:none}
+}
+
+/* ===== 반응형: 브레이크포인트별 한 번씩, 큰 값 → 작은 값 ===== */
+@media (max-width:799px){
+  .contents_div .vcn{--vcn-fs-h2:26px;--vcn-card-y:28px;--vcn-card-x:24px}
+  .contents_div .vcn-alert__big{font-size:34px}
+  .contents_div .vcn-alert__text{overflow-wrap:anywhere}
+  .contents_div .vcn-alert__card{padding-left:14px;padding-right:14px}
+  .contents_div .vcn-where__step{grid-template-columns:220px minmax(0,1fr)}
+}
+@media (max-width:720px){
+  /* 댕냥이편 배너: 설명글이 잔디에 묻히지 않게 흰 바탕 + 블루 글자 */
+  .contents_div .vcn-divider{justify-content:center;padding-top:0;padding-bottom:7px}
+  .contents_div .vcn-divider__desc{max-width:none;color:var(--vcn-blue-deep);line-height:1.7}
+  .contents_div .vcn-divider__mark{background:rgba(255,255,255,.85);padding:2px 6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+}
+@media (max-width:720px){.contents_div .vcn-divider__br{display:inline}.contents_div .vcn-divider__br--s{display:none}}
+@media (max-width:600px){
+  .contents_div .vcn{
+    --vcn-fs-h2:22px;--vcn-fs-foot:19px;--vcn-fs-h3:17px;
+    --vcn-fs-body:14px;--vcn-fs-lead:13.5px;--vcn-fs-info:14px;--vcn-fs-sub:12.5px;
+    --vcn-fs-cta:14px;--vcn-fs-kicker:10px;--vcn-fs-num:10px;
+    --vcn-fs-tag:11px;--vcn-fs-qa:16px;
+    --vcn-lh-h2:1.4;--vcn-lh-h3:1.5;
+    --vcn-kick:22px;--vcn-card-y:22px;--vcn-card-x:17px;
+  }
+  .contents_div .vcn__sec{padding:40px 22px}
+  /* 모바일 줄바꿈: 가운데 정렬 짧은 문구는 줄 길이 균형 */
+  .contents_div .vcn-combo__txt,.contents_div .vcn-alert__text,.contents_div .vcn-pet__sub,.contents_div .vcn-pet__val,.contents_div .vcn-intro__desc,.contents_div .vcn__lead{text-wrap:balance}
+  .contents_div .vcn-intro{padding-left:22px;padding-right:22px}
+  .contents_div .vcn__head{gap:10px;padding-bottom:24px}
+  .contents_div .vcn__eyebrow{padding:1px 10px 0}
+  .contents_div .vcn-intro__card{gap:14px;padding:var(--vcn-card-y) var(--vcn-card-x);border-radius:20px}
+  .contents_div .vcn-intro__ps{padding:10px 16px}
+  .contents_div .vcn-alert__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .contents_div .vcn-alert__card{padding:var(--vcn-card-y) var(--vcn-card-x)}
+  .contents_div .vcn-alert__card--navy{grid-column:1 / -1}
+  .contents_div .vcn-target__list{gap:8px}
+  .contents_div .vcn-target__item{padding:18px 6px;border-radius:18px}
+  .contents_div .vcn-target__cond{font-size:12px;line-height:1.45}
+  .contents_div .vcn-target__name{min-height:30px;padding:2px 14px;font-size:15px}
+  .contents_div .vcn-target::after{background-position:left -6.83% top 10px,left -44.8% bottom 6px;background-size:12.75% auto,40% auto}
+  .contents_div .vcn-target::before{top:145px;right:-12.2%;width:61.3%}
+  .contents_div .vcn-target__icon{width:76px;height:76px}
+  .contents_div .vcn-br-web{display:none}
+  .contents_div .vcn-br-mo{display:inline}
+  .contents_div .vcn-sched__group{gap:8px;padding:10px;border-radius:18px}
+  .contents_div .vcn-sched__gtit{flex-basis:96px;gap:6px;padding:12px 6px;font-size:15px;white-space:nowrap}
+  .contents_div .vcn-sched__ico{width:48px;height:48px}
+  .contents_div .vcn-sched__row{padding:12px 6px;gap:3px}
+  .contents_div .vcn-sched__who{font-size:13px}
+  .contents_div .vcn-sched__date{font-size:21px}
+  .contents_div .vcn-sched__date small{font-size:12px}
+  .contents_div .vcn-sched__group--elder .vcn-sched__date small{display:block;padding-left:0}
+  .contents_div .vcn-point{padding:4px 4px 2px;font-size:12px}
+  .contents_div .vcn-pet__grid{gap:10px}
+  .contents_div .vcn-pet__cell{padding-left:12px;padding-right:12px}
+  .contents_div .vcn-pet__sub .vcn-nw{white-space:normal}
+  .contents_div .vcn-pet__val{overflow-wrap:anywhere}
+  .contents_div .vcn-where__step{grid-template-columns:minmax(0,1fr);gap:6px;padding:var(--vcn-card-y) var(--vcn-card-x)}
+  .contents_div .vcn-where__no{font-size:19px;padding-top:2px}
+  .contents_div .vcn-combo{padding:var(--vcn-card-y) var(--vcn-card-x)}
+  .contents_div .vcn-combo__badge{font-size:12px}
+  .contents_div .vcn-combo__badge span{padding:6px 8px 4px}
+  .contents_div .vcn-combo__badge i{font-size:16px}
+  .contents_div .vcn__btns{grid-template-columns:1fr;gap:10px;padding-top:10px}
+  .contents_div .vcn__stack > .vcn__btns{padding-top:0}
+  .contents_div .vcn .vcn__btn{padding:14px 18px}
+  .contents_div .vcn .vcn__btn::after{width:30px;height:30px}
+  .contents_div .vcn-divider{padding-top:0;padding-bottom:7px;gap:2.6vw}
+  .contents_div .vcn-divider .vcn__eyebrow{margin-bottom:1.6vw}
+  .contents_div .vcn-divider__title{font-size:clamp(14px,4.6vw,22px);line-height:1.3}
+  .contents_div .vcn-divider__desc{font-size:clamp(10.5px,3.1vw,14px)}
+  .contents_div .vcn-divider__desc{max-width:none}
+  .contents_div .vcn-divider__title em{font-size:clamp(22px,7.4vw,36px);line-height:1.2}
+  .contents_div .vcn-pet__cell{padding:var(--vcn-card-y) var(--vcn-card-x)}
+  .contents_div .vcn-rabies{background-size:160px 160px}
+  .contents_div .vcn-rabies__cols{grid-template-columns:1fr}
+  .contents_div .vcn-qa__q{gap:10px;padding:14px var(--vcn-card-x)}
+  .contents_div .vcn-qa__a{padding:0 var(--vcn-card-x) 18px}
+  .contents_div .vcn-bite{padding:var(--vcn-card-y) var(--vcn-card-x)}
+  .contents_div .vcn-bite__list li{padding-left:32px}
+  .contents_div .vcn-bite__list li::before{top:12px}
+  .contents_div .vcn-tags{gap:6px;padding-top:18px}
+  .contents_div .vcn-outro{padding-top:32px;padding-bottom:30px;gap:8px}
+  .contents_div .vcn-outro__shield{width:39.3px;height:39.3px;margin-bottom:6px}
+  .contents_div .vcn-outro__pair{padding-bottom:22px}
+  .contents_div .vcn-tags li{padding:4px 9px}
+}
+@media (max-width:480px){
+  .contents_div .vcn__sec{padding-left:15px;padding-right:15px}
+  .contents_div .vcn-intro{padding-left:15px;padding-right:15px}
+  .contents_div .vcn-alert__big{font-size:30px}
+  .contents_div .vcn-alert__card{padding:18px 12px}
+  .contents_div .vcn-target__list{gap:6px}
+  .contents_div .vcn-target__item{padding:16px 4px;gap:6px}
+  .contents_div .vcn-target__icon{width:60px;height:60px}
+  .contents_div .vcn-target__name{min-height:26px;padding:2px 10px;font-size:13.5px;border-radius:8px}
+  .contents_div .vcn-target__cond{font-size:11px}
+  .contents_div .vcn-sched__group{gap:6px;padding:8px}
+  .contents_div .vcn-sched__gtit{flex-basis:74px;padding:10px 4px;font-size:13.5px}
+  .contents_div .vcn-sched__ico{width:38px;height:38px}
+  .contents_div .vcn-sched__row{padding:10px 3px}
+  .contents_div .vcn-sched__who{font-size:12px}
+  .contents_div .vcn-sched__date{font-size:18px}
+  .contents_div .vcn-sched__date small{display:block;padding-left:0;font-size:11px}
+  .contents_div .vcn-point{font-size:11px}
+  .contents_div .vcn-pet__grid{gap:8px}
+  .contents_div .vcn-divider{padding-top:0;padding-bottom:7px;gap:2.2vw}
+  .contents_div .vcn-divider .vcn__eyebrow{font-size:9px}
+  .contents_div .vcn-divider{padding-left:8px;padding-right:8px}
+  .contents_div .vcn-outro__txt:not(.vcn-outro__txt--lg){font-size:min(var(--vcn-fs-body),3.5vw)}
+  .contents_div .vcn-divider__desc{font-size:clamp(12px,3.3vw,14px)}
+  .contents_div .vcn-divider__mark{padding:2px 5px}
+  .contents_div .vcn-pet__cell{padding:16px 10px 14px;gap:6px;border-radius:16px}
+  .contents_div .vcn-pet__val{font-size:14px;letter-spacing:-0.04em;overflow-wrap:anywhere}
+  .contents_div .vcn-alert__text{overflow-wrap:anywhere}
+  .contents_div .vcn-pet__sub{font-size:11.5px}
+  .contents_div .vcn-pet__sub .vcn-nw{white-space:normal}
+  .contents_div .vcn-pet__price{font-size:36px}
+  .contents_div .vcn-pet__price span{font-size:18px}
+}
+@media (max-width:430px){
+  .contents_div .vcn-rabies{background-size:124px 124px}
+}
+@media (max-width:380px){
+  .contents_div .vcn{
+    --vcn-fs-h2:21.5px;--vcn-fs-foot:18px;--vcn-fs-h3:16px;
+    --vcn-fs-body:13.5px;--vcn-fs-lead:13px;--vcn-fs-info:13.5px;--vcn-fs-sub:12px;
+    --vcn-fs-cta:13.5px;--vcn-fs-tag:10.5px;--vcn-fs-qa:15px;
+    --vcn-card-y:19px;--vcn-card-x:14px;
+  }
+  .contents_div .vcn-alert__big{font-size:26px}
+  .contents_div .vcn-alert__card{padding:16px 9px}
+  .contents_div .vcn-target__icon{width:52px;height:52px}
+  .contents_div .vcn-target__name{padding:2px 8px;font-size:12.5px}
+  .contents_div .vcn-target__cond{font-size:10.5px}
+  .contents_div .vcn-sched__gtit{flex-basis:64px;font-size:12.5px}
+  .contents_div .vcn-sched__ico{width:34px;height:34px}
+  .contents_div .vcn-sched__who{font-size:11px}
+  .contents_div .vcn-sched__date{font-size:16px}
+  .contents_div .vcn-pet__cell{padding:14px 7px 12px}
+  .contents_div .vcn-pet__val{font-size:12.5px}
+  .contents_div .vcn-alert__text{font-size:12.5px}
+  .contents_div .vcn-pet__sub{font-size:11px}
+  .contents_div .vcn-pet__price{font-size:32px}
+}
+@media (max-width:360px){
+  .contents_div .vcn-sched__gtit{font-size:10.5px;padding:8px 2px}
+}
+@media (max-width:350px){
+  /* 댕냥이 배너 리드문: 350 이하는 4줄 */
+  .contents_div .vcn-divider__br--w{display:none}
+  .contents_div .vcn-divider__br--s{display:inline}
+  .contents_div .vcn-divider__desc{font-size:clamp(10.5px,3.3vw,12px);line-height:1.55}
+  .contents_div .vcn-divider__title em{font-size:6.6vw}
+  .contents_div .vcn-divider .vcn__eyebrow{margin-bottom:.6vw}
+}
+
+/* ===== 히어로 애니메이션 스테이지 (vxhero-) ===== */
+.contents_div .vxhero-stage {
+  position: relative;
+  width: 100%;
+  max-width: 800px;              /* 화면 최대 800px, 원본 1600px = 2배 해상도 */
+  aspect-ratio: 1600 / 1650;
+  overflow: hidden;
+  container-type: inline-size;
+  background: linear-gradient(180deg, #33509f 0%, #3f62b6 50%, #4e79d1 100%);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 모든 레이어는 스테이지 전체 크기의 <img> → 원본 좌표 그대로 겹침 */
+.contents_div .vxhero-layer {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  /* will-change 를 쓰지 않음: 모바일에서 저해상도로 래스터된 뒤 확대되어 흐려지는 현상 방지 */
+}
+
+/* ---------- 타이틀 글자 (타이틀 레이어에서 단어 영역만) ---------- */
+.contents_div .vxhero-word--1 { clip-path: inset(6% 63.6% 86.4% 20%); }    /* 올가을 */
+.contents_div .vxhero-word--2 { clip-path: inset(6% 52.8% 86.4% 36.4%); }  /* 가족 */
+.contents_div .vxhero-word--3 { clip-path: inset(6% 30.5% 86.4% 54%); }    /* 건강의 */
+.contents_div .vxhero-word--4 { clip-path: inset(6% 19% 86.4% 69.5%); }    /* 완성 */
+
+/* ---------- 방패 / 캘린더(+그림자) ---------- */
+.contents_div .vxhero-cal--shield {
+  clip-path: circle(3.6cqw at 50.5% 10%);
+  transform-origin: 50.5% 10%;
+}
+.contents_div .vxhero-cal--body {
+  /* 위쪽 타이틀 영역만 제외 — 캘린더와 바닥 그림자는 자르지 않고 한 덩어리로 */
+  clip-path: inset(18% 0 0 0);
+  transform-origin: 50% 50%;
+}
+
+/* ---------- 버블 4개 (원형 클립으로 개별 분리) ---------- */
+.contents_div .vxhero-bubble--grandpa { clip-path: circle(11.3cqw at 15.06% 40.06%); transform-origin: 15.06% 40.06%; }
+.contents_div .vxhero-bubble--boy     { clip-path: circle(14cqw   at 80.69% 30.3%);  transform-origin: 80.69% 30.3%; }
+.contents_div .vxhero-bubble--woman   { clip-path: circle(11.9cqw at 28.88% 74.24%); transform-origin: 28.88% 74.24%; }
+.contents_div .vxhero-bubble--dog     { clip-path: circle(10.9cqw at 80.38% 66.55%); transform-origin: 80.38% 66.55%; }
+
+/* ---------- 바이러스 4개 ---------- */
+.contents_div .vxhero-virus--a { clip-path: circle(7.2cqw at 19.1% 22.5%);  transform-origin: 19.1% 22.5%; }
+.contents_div .vxhero-virus--b { clip-path: circle(4.4cqw at 92% 49.5%);    transform-origin: 92% 49.5%; }
+.contents_div .vxhero-virus--c { clip-path: circle(4.4cqw at 9.6% 67%);     transform-origin: 9.6% 67%; }
+.contents_div .vxhero-virus--d { clip-path: circle(4.2cqw at 75.4% 86.8%);  transform-origin: 75.4% 86.8%; }
+
+/* =========================================================
+   애니메이션 — 뷰포트에 35% 들어와 .vxhero-is-on 이 붙으면 재생
+   ========================================================= */
+.contents_div .vxhero-anim { opacity: 0; }
+
+.contents_div .vxhero-is-on .vxhero-word {
+  animation: vxhero-kf-rise .7s cubic-bezier(.2,.9,.25,1.2) both;
+  animation-delay: calc(var(--vxhero-i) * .12s + .15s);
+}
+.contents_div .vxhero-is-on .vxhero-cal--shield {
+  animation: vxhero-kf-pop .7s cubic-bezier(.3,1.6,.5,1) .55s both,
+             vxhero-kf-pulse 2.6s ease-in-out 1.4s infinite;
+}
+.contents_div .vxhero-is-on .vxhero-cal--body {
+  animation: vxhero-kf-drop 1s cubic-bezier(.25,1.35,.45,1) .5s both,
+             vxhero-kf-float-cal 5s ease-in-out 1.5s infinite;
+}
+.contents_div .vxhero-is-on .vxhero-bubble {
+  animation: vxhero-kf-pop .8s cubic-bezier(.3,1.55,.5,1) var(--vxhero-delay) both,
+             vxhero-kf-float var(--vxhero-dur) ease-in-out var(--vxhero-delay) infinite;
+}
+.contents_div .vxhero-bubble--boy     { --vxhero-delay: 1.1s;  --vxhero-dur: 4.2s; --vxhero-fy: -1.6%; --vxhero-fx: .5%;  --vxhero-fr: 2deg; }
+.contents_div .vxhero-bubble--grandpa { --vxhero-delay: 1.3s;  --vxhero-dur: 5.1s; --vxhero-fy: -1.3%; --vxhero-fx: -.6%; --vxhero-fr: -2.5deg; }
+.contents_div .vxhero-bubble--dog     { --vxhero-delay: 1.5s;  --vxhero-dur: 4.6s; --vxhero-fy: -1.8%; --vxhero-fx: .4%;  --vxhero-fr: 3deg; }
+.contents_div .vxhero-bubble--woman   { --vxhero-delay: 1.7s;  --vxhero-dur: 5.6s; --vxhero-fy: -1.2%; --vxhero-fx: -.5%; --vxhero-fr: -2deg; }
+
+.contents_div .vxhero-is-on .vxhero-virus {
+  animation: vxhero-kf-pop .6s ease-out var(--vxhero-delay) both,
+             vxhero-kf-spin var(--vxhero-dur) linear var(--vxhero-delay) infinite;
+}
+.contents_div .vxhero-virus--a { --vxhero-delay: 1.9s;  --vxhero-dur: 14s; }
+.contents_div .vxhero-virus--b { --vxhero-delay: 2.05s; --vxhero-dur: 10s; animation-direction: normal, reverse !important; }
+.contents_div .vxhero-virus--c { --vxhero-delay: 2.2s;  --vxhero-dur: 12s; animation-direction: normal, reverse !important; }
+.contents_div .vxhero-virus--d { --vxhero-delay: 2.35s; --vxhero-dur: 9s; }
+
+/* 인트로는 scale / rotate / opacity, 루프는 transform 을 써서 서로 충돌하지 않음 */
+@keyframes vxhero-kf-rise {
+  from { opacity: 0; transform: translateY(3%); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes vxhero-kf-pop {
+  0%   { opacity: 0; scale: 0; }
+  60%  { opacity: 1; }
+  100% { opacity: 1; scale: 1; }
+}
+@keyframes vxhero-kf-drop {
+  0%   { opacity: 0; scale: .55; rotate: -14deg; }
+  55%  { opacity: 1; }
+  100% { opacity: 1; scale: 1; rotate: 0deg; }
+}
+@keyframes vxhero-kf-pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.14); }
+}
+@keyframes vxhero-kf-float-cal {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-1.5%) rotate(-1.2deg); }
+}
+@keyframes vxhero-kf-float {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50%      { transform: translate(var(--vxhero-fx), var(--vxhero-fy)) rotate(var(--vxhero-fr)); }
+}
+@keyframes vxhero-kf-spin {
+  0%   { transform: rotate(0deg) scale(1); }
+  50%  { transform: rotate(180deg) scale(1.15); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contents_div .vxhero-anim { opacity: 1; }
+  .contents_div .vxhero-stage * { animation: none !important; }
+}
+</style>
+<div class="contents_div">
+<div class="vcn">
+  <!-- TEST: 히어로 진입 테스트용 빈 프레임 (테스트 후 삭제) -->
+<div class="jngj-test-spacer" style="height:1200px;background:#fffdef;" aria-hidden="true"></div>
+<!-- /TEST 뷰포트 진입 애니메이션 확인용, 확인 후 삭제 -->
+
+  <!-- ===== 히어로 + 인트로 ===== -->
+  <section class="vcn-hero">
+    <h1 class="vcn-sr">올가을 가족 건강의 완성, 꼭 챙겨야 할 예방접종 일정</h1>
+    <div class="vxhero-stage" id="vxheroStage" role="img" aria-label="올가을 가족 건강의 완성, 꼭 챙겨야 할 예방접종 일정">
+
+      <!-- 배경 (LCP 후보) -->
+      <img class="vxhero-layer vxhero-bg" src="img/히어로배경.webp" width="1600" height="1650" alt="" fetchpriority="high" loading="eager" decoding="async">
+
+      <!-- 타이틀 글자 -->
+      <img class="vxhero-layer vxhero-word vxhero-word--1 vxhero-anim" style="--vxhero-i:0" src="img/히어로배경_타이틀.webp" width="1600" height="1650" alt="" fetchpriority="high" loading="eager" decoding="async">
+      <img class="vxhero-layer vxhero-word vxhero-word--2 vxhero-anim" style="--vxhero-i:1" src="img/히어로배경_타이틀.webp" width="1600" height="1650" alt="" loading="eager" decoding="async">
+      <img class="vxhero-layer vxhero-word vxhero-word--3 vxhero-anim" style="--vxhero-i:2" src="img/히어로배경_타이틀.webp" width="1600" height="1650" alt="" loading="eager" decoding="async">
+      <img class="vxhero-layer vxhero-word vxhero-word--4 vxhero-anim" style="--vxhero-i:3" src="img/히어로배경_타이틀.webp" width="1600" height="1650" alt="" loading="eager" decoding="async">
+
+      <!-- 바이러스 -->
+      <img class="vxhero-layer vxhero-virus vxhero-virus--a vxhero-anim" src="img/히어로배경_인플루엔자.webp" width="1600" height="1650" alt="" fetchpriority="high" loading="eager" decoding="async">
+      <img class="vxhero-layer vxhero-virus vxhero-virus--b vxhero-anim" src="img/히어로배경_인플루엔자.webp" width="1600" height="1650" alt="" loading="eager" decoding="async">
+      <img class="vxhero-layer vxhero-virus vxhero-virus--c vxhero-anim" src="img/히어로배경_인플루엔자.webp" width="1600" height="1650" alt="" loading="eager" decoding="async">
+      <img class="vxhero-layer vxhero-virus vxhero-virus--d vxhero-anim" src="img/히어로배경_인플루엔자.webp" width="1600" height="1650" alt="" loading="eager" decoding="async">
+
+      <!-- 캘린더(+그림자) / 방패 -->
+      <img class="vxhero-layer vxhero-cal--body vxhero-anim" src="img/히어로배경_타이틀.webp" width="1600" height="1650" alt="" loading="eager" decoding="async">
+      <img class="vxhero-layer vxhero-cal--shield vxhero-anim" src="img/히어로배경_타이틀.webp" width="1600" height="1650" alt="" loading="eager" decoding="async">
+
+      <!-- 가족 버블 -->
+      <img class="vxhero-layer vxhero-bubble vxhero-bubble--grandpa vxhero-anim" src="img/히어로_캐릭터.webp" width="1600" height="1650" alt="" fetchpriority="high" loading="eager" decoding="async">
+      <img class="vxhero-layer vxhero-bubble vxhero-bubble--boy vxhero-anim" src="img/히어로_캐릭터.webp" width="1600" height="1650" alt="" loading="eager" decoding="async">
+      <img class="vxhero-layer vxhero-bubble vxhero-bubble--woman vxhero-anim" src="img/히어로_캐릭터.webp" width="1600" height="1650" alt="" loading="eager" decoding="async">
+      <img class="vxhero-layer vxhero-bubble vxhero-bubble--dog vxhero-anim" src="img/히어로_캐릭터.webp" width="1600" height="1650" alt="" loading="eager" decoding="async">
+    </div>
+    <div class="vcn-intro">
+    <div class="vcn-intro__card">
+      <p class="vcn-intro__desc" data-vcn-reveal><span class="vcn-ph">찬바람이 불기 시작하며 일교차가 큰 요즘은</span> <span class="vcn-ph"><strong>인플루엔자를 조심해야 할 타이밍</strong>이에요.</span><br> <span class="vcn-ph">온 가족의 건강을 사수할 국가예방접종 정보,</span> <span class="vcn-ph">모두의전남광주가 정리해드릴게요.</span></p>
+      <p class="vcn-intro__ps" data-vcn-reveal data-vcn-delay="1"><span class="vcn-ph"><b>p.s.</b>소중한 우리 가족,</span> <span class="vcn-ph">댕냥이 예방접종 정보도 알려드려요.</span></p>
+    </div>
+    </div>
+  </section>
+
+  <!-- ===== 유행주의보 ===== -->
+  <section class="vcn__sec vcn-alert">
+    <div class="vcn__head" data-vcn-reveal>
+      <span class="vcn__eyebrow">INFLUENZA ALERT</span>
+      <h2 class="vcn__h2 vcn-alert__quote">올해는 인플루엔자 유행이 <br class="vcn-alert__br"><em>빨라졌어요</em></h2>
+      <p class="vcn__lead">무려 지난해보다 <strong>한 달 이상</strong> 빠릅니다.</p>
+    </div>
+    <div class="vcn-alert__grid">
+      <div class="vcn-alert__card vcn-alert__card--hot" data-vcn-reveal>
+        <p class="vcn-alert__label">유행주의보 발령</p>
+        <p class="vcn-alert__big">9.11.</p>
+        <p class="vcn-alert__text">이미 9월 11일에 인플루엔자 유행주의보가 발령됐어요.</p>
+      </div>
+      <div class="vcn-alert__card" data-vcn-reveal data-vcn-delay="1">
+        <p class="vcn-alert__label">접종 시기 앞당김</p>
+        <p class="vcn-alert__big">9.21.~</p>
+        <p class="vcn-alert__text">시민의 안전을 지키기 위해 전남광주통합특별시가 당초 계획보다 국가예방접종 시기를 앞당겼어요.</p>
+      </div>
+      <div class="vcn-alert__card vcn-alert__card--navy" data-vcn-reveal data-vcn-delay="2">
+        <p class="vcn-alert__label">중증 진행 예방</p>
+        <p class="vcn-alert__big">60~70%</p>
+        <p class="vcn-alert__text">접종하면 인플루엔자로 인한 중증 진행을<br class="vcn-br-mo"> 약 60~70%까지 예방할 수 있어요.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 접종 대상 ===== -->
+  <section class="vcn__sec vcn-target">
+    <div class="vcn__head" data-vcn-reveal>
+      <span class="vcn__eyebrow">WHO</span>
+      <h2 class="vcn__h2"><span class="vcn__line">인플루엔자 국가예방접종,</span><span class="vcn__line"><em>이런 분들</em>이 대상이에요</span></h2>
+      <p class="vcn__lead">중증 합병증 위험이 큰 <strong>어르신, 어린이, 임신부</strong> 등이 대상이에요.</p>
+    </div>
+    <ul class="vcn-target__list">
+      <li class="vcn-target__item" data-vcn-reveal>
+        <span class="vcn-target__icon vcn-target__icon--kid" aria-hidden="true"></span>
+        <div class="vcn-target__txt"><h3 class="vcn__h3 vcn-target__name vcn-target__name--kid">어린이</h3><p class="vcn-target__cond">2012.01.01.~<wbr>2026.08.31. 출생자</p></div>
+      </li>
+      <li class="vcn-target__item" data-vcn-reveal data-vcn-delay="1">
+        <span class="vcn-target__icon vcn-target__icon--preg" aria-hidden="true"></span>
+        <div class="vcn-target__txt"><h3 class="vcn__h3 vcn-target__name vcn-target__name--preg">임신부</h3><p class="vcn-target__cond">임신이 확인된 사람</p></div>
+      </li>
+      <li class="vcn-target__item" data-vcn-reveal data-vcn-delay="2">
+        <span class="vcn-target__icon vcn-target__icon--elder" aria-hidden="true"></span>
+        <div class="vcn-target__txt"><h3 class="vcn__h3 vcn-target__name vcn-target__name--elder">65세 이상</h3><p class="vcn-target__cond">1961.12.31. 이전 출생자</p></div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===== 접종 일정 ===== -->
+  <section class="vcn__sec vcn-sched">
+    <div class="vcn__head" data-vcn-reveal>
+      <span class="vcn__eyebrow">WHEN</span>
+      <h2 class="vcn__h2">대상별 <em>접종 일정</em><span class="vcn-h2ico vcn-h2ico--cal" aria-hidden="true"></span>확인하세요</h2>
+    </div>
+    <div class="vcn__stack">
+    <div class="vcn-sched__grid">
+      <div class="vcn-sched__group vcn-sched__group--kid" data-vcn-reveal>
+        <h3 class="vcn__h3 vcn-sched__gtit"><span class="vcn-target__icon vcn-target__icon--kid vcn-sched__ico" aria-hidden="true"></span>어린이</h3>
+        <div class="vcn-sched__row"><p class="vcn-sched__who">2회 접종 대상자</p><p class="vcn-sched__date">9.21.<small>(월)부터</small></p></div>
+        <div class="vcn-sched__row"><p class="vcn-sched__who">1회 접종 대상자</p><p class="vcn-sched__date">9.21.<small>(월)부터</small></p></div>
+        <p class="vcn-point"><span class="vcn-ph">※ 단, 6개월~9세 미만 어린이 중 과거 접종력이 없거나</span> <span class="vcn-ph">기존에 1회만 접종받은 자는 2회 접종</span></p>
+      </div>
+      <div class="vcn-sched__group vcn-sched__group--preg" data-vcn-reveal data-vcn-delay="1">
+        <h3 class="vcn__h3 vcn-sched__gtit"><span class="vcn-target__icon vcn-target__icon--preg vcn-sched__ico" aria-hidden="true"></span>임신부</h3>
+        <div class="vcn-sched__row"><p class="vcn-sched__date">9.21.<small>(월)부터</small></p></div>
+      </div>
+      <div class="vcn-sched__group vcn-sched__group--elder" data-vcn-reveal data-vcn-delay="2">
+        <h3 class="vcn__h3 vcn-sched__gtit"><span class="vcn-target__icon vcn-target__icon--elder vcn-sched__ico" aria-hidden="true"></span>65세 이상</h3>
+        <div class="vcn-sched__row"><p class="vcn-sched__who">75세 이상</p><p class="vcn-sched__date">10.6.<small>(화)부터</small></p></div>
+        <div class="vcn-sched__row"><p class="vcn-sched__who">70~74세</p><p class="vcn-sched__date">10.12.<small>(월)부터</small></p></div>
+        <div class="vcn-sched__row"><p class="vcn-sched__who">65~69세</p><p class="vcn-sched__date">10.15.<small>(목)부터</small></p></div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ===== 접종 장소 ===== -->
+  <section class="vcn__sec vcn-where">
+    <div class="vcn__head" data-vcn-reveal>
+      <span class="vcn__eyebrow">WHERE</span>
+      <h2 class="vcn__h2">접종은 <em>어디서</em><span class="vcn-h2ico vcn-h2ico--hosp" aria-hidden="true"></span><br class="vcn-br-mo">받을 수 있을까?</h2>
+    </div>
+    <div class="vcn__stack">
+    <ol class="vcn-where__steps">
+      <li class="vcn-where__step" data-vcn-reveal>
+        <div class="vcn-where__hd"><span class="vcn-where__no">01</span><h3 class="vcn__h3">지정 위탁의료기관</h3></div>
+        <p class="vcn-where__txt">주소지와 관계없이 지정 위탁의료기관에서 받을 수 있어요.</p>
+      </li>
+      <li class="vcn-where__step" data-vcn-reveal data-vcn-delay="1">
+        <div class="vcn-where__hd"><span class="vcn-where__no">02</span><h3 class="vcn__h3">신분증 지참</h3></div>
+        <p class="vcn-where__txt">접종을 위해서는 꼭 신분증을 지참해야 해요.</p>
+      </li>
+      <li class="vcn-where__step" data-vcn-reveal data-vcn-delay="2">
+        <div class="vcn-where__hd"><span class="vcn-where__no">03</span><h3 class="vcn__h3">방문 전 전화 확인</h3></div>
+        <p class="vcn-where__txt">의료기관에 따라 백신 보유 여부와 운영 시간이 달라 미리 전화로 확인해 보시길 추천해요.</p>
+      </li>
+    </ol>
+    <div class="vcn-combo" data-vcn-reveal>
+      <div class="vcn-combo__badge" aria-hidden="true"><span class="vcn-combo__flu">독감</span><i>+</i><span class="vcn-combo__cov">코로나19</span></div>
+      <p class="vcn-combo__txt">코로나19 국가예방접종 대상은 65세 이상이며<br class="vcn-br-web"> 한 번 방문으로 인플루엔자, 코로나19 두 백신을 동시에 접종받을 수 있습니다.</p>
+    </div>
+    <div class="vcn__btns" data-vcn-reveal>
+      <a class="vcn__btn vcn__btn--fill" href="https://nip.kdca.go.kr/irhp/mngm/goVcntMngm.do?menuLv=3&amp;menuCd=333" target="_blank" rel="noopener noreferrer" title="새 창 열림">지정 위탁의료기관 확인하기</a>
+      <a class="vcn__btn vcn__btn--line" href="https://nip.kdca.go.kr/irhp/infm/goVcntInfo.do?menuLv=1&amp;menuCd=151" target="_blank" rel="noopener noreferrer" title="새 창 열림">접종 후 나타날 수 있는 증상</a>
+    </div>
+    </div>
+  </section>
+
+  <!-- ===== 반려동물 구분 배너 ===== -->
+  <section class="vcn__sec vcn-divider" data-vcn-reveal>
+    <span class="vcn__eyebrow">댕냥이 편</span>
+    <h2 class="vcn-divider__title"><span>광견병 예방주사가</span><em>5천원?</em></h2>
+    <p class="vcn-divider__desc"><span class="vcn-divider__mark">소중한 댕냥이도 예방접종은 필수!<br class="vcn-divider__br"> 반려인과 반려동물 모두의 건강을 위해<br class="vcn-divider__br vcn-divider__br--s"> 전남광주통합특별시가<br class="vcn-divider__br vcn-divider__br--w"> 가을철<br class="vcn-divider__br vcn-divider__br--s"> 광견병 예방접종 사업을 추진해요.</span></p>
+  </section>
+
+  <!-- ===== 광견병 예방접종 사업 ===== -->
+  <section class="vcn__sec vcn-pet">
+    <div class="vcn__head" data-vcn-reveal>
+      <span class="vcn__eyebrow">PET VACCINE</span>
+      <h2 class="vcn__h2">가을철 <em>광견병 예방접종</em> 한눈에 보기</h2>
+    </div>
+    <div class="vcn-pet__grid">
+      <div class="vcn-pet__cell" data-vcn-reveal>
+        <p class="vcn-pet__label vcn-pet__label--cal">접종 일정</p>
+        <p class="vcn-pet__val"><span class="vcn-nw">2026.10.16.(금)~</span><wbr><span class="vcn-nw">10.30.(금)</span></p>
+      </div>
+      <div class="vcn-pet__cell" data-vcn-reveal data-vcn-delay="1">
+        <p class="vcn-pet__label vcn-pet__label--paw">접종 대상</p>
+        <p class="vcn-pet__val">광주 지역에 등록된 반려견, 반려묘</p>
+      </div>
+      <div class="vcn-pet__cell" data-vcn-reveal>
+        <p class="vcn-pet__label vcn-pet__label--card">접종 방법</p>
+        <p class="vcn-pet__val">지정 동물병원 방문</p>
+        <p class="vcn-pet__sub">동물등록증 또는 <span class="vcn-nw">동물등록장치(외장형·인식표)</span>를 지참해야 해요.</p>
+      </div>
+      <div class="vcn-pet__cell vcn-pet__cell--price" data-vcn-reveal data-vcn-delay="1">
+        <p class="vcn-pet__label vcn-pet__label--won">접종 비용</p>
+        <p class="vcn-pet__price">5천<span>원</span></p>
+        <p class="vcn-pet__sub">시민 부담금이며 나머지는 지원해요.</p>
+      </div>
+    </div>
+    <div class="vcn__btns vcn__btns--one" data-vcn-reveal>
+      <a class="vcn__btn vcn__btn--teal" href="https://www.jeonnam-gwangju.go.kr/boardView.do?pageId=jngj21&amp;boardId=JG_0000000001&amp;seq=93&amp;movePage=1&amp;recordCnt=10&amp;searchTy=TM&amp;searchQuery=%EA%B4%91%EA%B2%AC%EB%B3%91" target="_blank" rel="noopener noreferrer" title="새 창 열림">우리 동네 지정 동물병원은 어디일까?</a>
+    </div>
+  </section>
+
+  <!-- ===== 광견병 Q&A ===== -->
+  <section class="vcn__sec vcn-rabies">
+    <div class="vcn__head" data-vcn-reveal>
+      <span class="vcn__eyebrow">Q&amp;A</span>
+      <h2 class="vcn__h2"><span class="vcn__line">사람과 동물의 건강을 위협하는</span><span class="vcn__line"><em>광견병</em>이란 어떤 병일까?</span></h2>
+    </div>
+    <div class="vcn-rabies__cols">
+      <div class="vcn-qa">
+        <details class="vcn-qa__item" open data-vcn-reveal>
+          <summary class="vcn-qa__q"><span class="vcn-qa__mark">Q</span><span class="vcn-qa__qt">광견병이란?</span><span class="vcn-qa__plus" aria-hidden="true"></span></summary>
+          <div class="vcn-qa__a">
+            <p>광견병(공수병)은 광견병 바이러스 감염으로 인해 뇌염이나 신경 증상 등 <strong>중추신경계에 발생하는 인수공통감염병</strong>이에요. 사람에게 발생하면 공수병, 동물에게 발생할 경우 광견병이라고 불러요.</p>
+          </div>
+        </details>
+        <details class="vcn-qa__item" data-vcn-reveal>
+          <summary class="vcn-qa__q"><span class="vcn-qa__mark">Q</span><span class="vcn-qa__qt">광견병의 원인은 무엇일까?</span><span class="vcn-qa__plus" aria-hidden="true"></span></summary>
+          <div class="vcn-qa__a">
+            <p>광견병에 걸린 개나 다른 포유류(너구리, 오소리, 여우, 코요테, 스컹크, 박쥐)에게 <strong>직접 물리거나</strong>, 그런 야생동물에게 물려 광견병에 걸린 개에게 <strong>다시 물릴 경우</strong> 바이러스가 상처로부터 신경을 타고 <strong>중추신경까지 올라가 발병</strong>합니다.</p>
+            <p class="vcn__note">야생동물과 접촉하지 않은, 집에서 키우는 강아지가 광견병 바이러스를 획득해 병에 걸릴 가능성은 매우 낮다고 알려져 있어요.</p>
+          </div>
+        </details>
+        <details class="vcn-qa__item" data-vcn-reveal>
+          <summary class="vcn-qa__q"><span class="vcn-qa__mark">Q</span><span class="vcn-qa__qt">예방접종 왜 중요할까?</span><span class="vcn-qa__plus" aria-hidden="true"></span></summary>
+          <div class="vcn-qa__a">
+            <p>광견병은 동물과 사람 사이에서 서로 전파되는 인수공통감염병이에요. 서로 조심해야 한다는 뜻! <strong>매년 예방백신으로 위험을 크게 줄일 수 있답니다.</strong></p>
+          </div>
+        </details>
+      </div>
+      <div class="vcn-bite" data-vcn-reveal data-vcn-delay="1">
+        <div class="vcn-bite__head"><h3 class="vcn__h3 vcn-bite__title">광견병이 의심되는<br> 동물에게 물렸다면?</h3></div>
+        <ol class="vcn-bite__list">
+          <li><strong>물린 즉시</strong> 상처를 비누와 물로 충분히 씻어내요.</li>
+          <li>포비돈-요오드 용액이나 알코올 등으로 <strong>소독</strong>해요.</li>
+          <li>빠르게 <strong>의료기관</strong>을 찾아가요.</li>
+          <li>의료기관에 <strong>언제, 어디서, 어떤 동물</strong>에게 물렸는지 알려요.</li>
+          <li>응급처치 후 <strong>백신 접종</strong>, 잠복기 내에 필요한 모든 예방접종을 완료해요.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 마무리(푸터) ===== -->
+  <section class="vcn__sec vcn-outro" data-vcn-reveal>
+    <span class="vcn-outro__shield" aria-hidden="true"></span>
+    <p class="vcn-outro__txt">기온이 떨어지는 요즘, 사람과 동물 모두에게 중요한 건</p>
+    <div class="vcn-outro__pair">
+    <p class="vcn-outro__big"><em>면역력</em> 형성!</p>
+    <p class="vcn-outro__txt vcn-outro__txt--lg">온 가족의 건강,<br class="vcn-br-mo"> 예방접종으로 슬기롭게 챙겨보세요.</p>
+    </div>
+    <ul class="vcn-tags">
+      <li>#인플루엔자</li><li>#독감예방접종</li><li>#국가예방접종</li><li>#예방접종일정</li><li>#코로나19동시접종</li><li>#광견병예방접종</li><li>#반려동물</li><li>#백신일정</li><li>#전남광주통합특별시</li><li>#모두의전남광주</li>
+    </ul>
+  </section>
+
+</div>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Article",
+      "headline":"올가을 가족 건강의 완성, 꼭 챙겨야 할 예방접종 일정 체크",
+      "description":"2026년 가을 인플루엔자 국가예방접종 대상·일정·접종기관과 반려동물 광견병 예방접종(시민 부담 5천원) 안내",
+      "inLanguage":"ko-KR",
+      "publisher":{"@type":"GovernmentOrganization","name":"전남광주통합특별시"},
+      "keywords":"인플루엔자, 독감 예방접종, 국가예방접종, 코로나19, 광견병, 반려동물, 전남광주통합특별시"
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"인플루엔자 국가예방접종 대상은 누구인가요?","acceptedAnswer":{"@type":"Answer","text":"어린이(2012.01.01.~2026.08.31. 출생자), 임신부(임신이 확인된 사람), 65세 이상(1961.12.31. 이전 출생자)입니다."}},
+        {"@type":"Question","name":"대상별 인플루엔자 접종 일정은 어떻게 되나요?","acceptedAnswer":{"@type":"Answer","text":"어린이와 임신부는 9월 21일(월)부터, 75세 이상은 10월 6일(화)부터, 70~74세는 10월 12일(월)부터, 65~69세는 10월 15일(목)부터 접종할 수 있습니다. 생후 6개월~9세 미만 어린이 중 과거 접종력이 없거나 기존에 1회만 접종받은 경우 2회 접종합니다."}},
+        {"@type":"Question","name":"인플루엔자 예방접종은 어디서 받나요?","acceptedAnswer":{"@type":"Answer","text":"주소지와 관계없이 지정 위탁의료기관에서 받을 수 있습니다. 신분증을 꼭 지참하고, 백신 보유 여부와 운영 시간은 방문 전 전화로 확인하세요. 코로나19 국가예방접종 대상인 65세 이상은 한 번 방문으로 두 백신을 동시에 접종받을 수 있습니다."}},
+        {"@type":"Question","name":"가을철 광견병 예방접종 기간과 비용은?","acceptedAnswer":{"@type":"Answer","text":"2026년 10월 16일(금)부터 10월 30일(금)까지 광주 지역에 등록된 반려견과 반려묘를 대상으로 지정 동물병원에서 실시하며, 시민 부담은 5천원입니다. 동물등록증 또는 동물등록장치(외장형·인식표)를 지참해야 합니다."}},
+        {"@type":"Question","name":"광견병이 의심되는 동물에게 물렸다면 어떻게 하나요?","acceptedAnswer":{"@type":"Answer","text":"즉시 상처를 비누와 물로 충분히 씻고, 포비돈-요오드 용액이나 알코올 등으로 소독한 뒤 빠르게 의료기관을 찾아 언제, 어디서, 어떤 동물에게 물렸는지 알리고, 응급처치 후 잠복기 내에 필요한 모든 예방접종을 완료해야 합니다."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function () {
+  var root = document.querySelector('.contents_div .vcn');
+  if (!root) return;
+  var targets = root.querySelectorAll('[data-vcn-reveal]');
+  if (!('IntersectionObserver' in window)) {
+    for (var i = 0; i < targets.length; i++) targets[i].classList.add('is-in');
+    return;
+  }
+  root.classList.add('is-ready');
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  for (var j = 0; j < targets.length; j++) io.observe(targets[j]);
+})();
+</script>
+
+<!-- 히어로 애니메이션 -->
+<script>
+(function () {
+  var vxheroStage = document.getElementById('vxheroStage');
+  if (!vxheroStage) return;
+
+
+  /* 1) 섹션이 뷰포트에 35% 들어왔을 때 한 번만 재생 */
+  function vxheroPlay() {
+    vxheroStage.classList.add('vxhero-is-on');
+  }
+  if ('IntersectionObserver' in window) {
+    var vxheroIO = new IntersectionObserver(function (entries) {
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting && entries[i].intersectionRatio >= 0.35) {
+          vxheroPlay();
+          vxheroIO.disconnect();
+          break;
+        }
+      }
+    }, { threshold: 0.35 });
+    vxheroIO.observe(vxheroStage);
+  } else {
+    vxheroPlay();
+  }
+})();
+</script>
